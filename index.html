@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join Telegram Channel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background: linear-gradient(135deg, #0088cc, #00c6ff);
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+        }
+        .btn {
+            background: white;
+            color: #0088cc;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 20px 0;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .instructions {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .loader {
+            border: 4px solid rgba(255,255,255,0.3);
+            border-radius: 50%;
+            border-top: 4px solid white;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .telegram-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="telegram-icon">📱</div>
+        <h1>Welcome to Our Channel!</h1>
+        <p>Opening your Telegram channel...</p>
+        
+        <div class="loader"></div>
+        
+        <a href="tg://resolve?domain=+oB2DsOH6Lk83MDMy" class="btn">
+            Open in Telegram
+        </a>
+        
+        <div class="instructions">
+            <p><strong>If Telegram doesn't open automatically:</strong></p>
+            <p>1. Tap "Open" in the pop-up window</p>
+            <p>2. Or press the button above</p>
+            <p>3. Make sure you have Telegram installed</p>
+        </div>
+    </div>
+    
+    <script>
+        // Try to open Telegram immediately
+        window.location.href = 'tg://resolve?domain=+oB2DsOH6Lk83MDMy';
+    </script>
+</body>
+</html>
